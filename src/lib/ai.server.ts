@@ -24,7 +24,7 @@ export async function runAI(system: string, prompt: string, signal?: AbortSignal
     model: provider.responses(MODEL),
     system,
     prompt,
-    abortSignal: signal,
+    ...(signal ? { abortSignal: signal } : {}),
     maxRetries: 0,
     onError: ({ error }) => {
       failure = error;

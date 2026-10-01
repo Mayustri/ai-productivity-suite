@@ -37,7 +37,7 @@ export const Route = createFileRoute("/api/ai")({
           .map(([k, v]) => `${k}: ${v.slice(0, 20000)}`)
           .join("\n\n");
         try {
-          const text = await runAI(SYSTEMS[body.task], prompt, request.signal);
+          const text = await runAI(SYSTEMS[body.task]!, prompt, request.signal);
           if (!text.trim()) return Response.json({ error: "The AI returned no content. Please adjust your input." }, { status: 502 });
           return Response.json({ data: parseJSON(text) });
         } catch (e: any) {

@@ -77,7 +77,7 @@ function PlannerPage() {
                           <input className="input-bare text-xs text-muted-foreground" value={b.notes} onChange={(e) => edit(di, bi, { notes: e.target.value })} />
                         </div>
                         <div className="flex items-center gap-1">
-                          <select value={b.priority} onChange={(e) => edit(di, bi, { priority: e.target.value as Block["priority"] })} className={`rounded-full border-0 px-2 py-0.5 text-xs font-medium ${PRIO[b.priority] ?? PRIO.Low}`}>
+                          <select value={b.priority} onChange={(e) => edit(di, bi, { priority: e.target.value as Block["priority"] })} className={`rounded-full border-0 px-2 py-0.5 text-xs font-medium ${PRIO[b.priority] ?? PRIO["Low"]}`}>
                             <option>High</option><option>Medium</option><option>Low</option>
                           </select>
                           <button aria-label="Remove" onClick={() => remove(di, bi)} className="rounded p-1 text-muted-foreground hover:text-destructive"><Trash2 className="h-3.5 w-3.5" /></button>
