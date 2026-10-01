@@ -1,78 +1,203 @@
-# AI Productivity Suite
+# 🤖 AI Workplace Productivity Assistant
 
-Build a modern, responsive SaaS-style web application called **AI Workplace Productivity Assistant** for professionals to streamline everyday workplace tasks using AI.
+An intelligent, modern web application designed to help professionals streamline everyday workplace tasks using AI. The application generates personalized outputs rather than relying on generic, static responses, making it useful for real-world productivity workflows.
 
-### Core Features
+## 📌 Project Overview
 
-1. **Smart Email Generator**
+The **AI Workplace Productivity Assistant** combines multiple AI-powered productivity tools into one responsive dashboard.
 
-* Generate professional workplace emails using AI.
-* Tone options: **Formal, Friendly, Persuasive**.
-* Provide editable AI-generated output.
+The application helps users:
 
-2. **Meeting Notes Summariser**
+* Generate professional emails based on their specific requirements.
+* Summarize lengthy meeting notes.
+* Identify action items, decisions, and deadlines from meetings.
+* Create personalized daily task plans.
+* Edit and refine AI-generated outputs before using them.
 
-* Allow users to enter or paste lengthy meeting notes.
-* Generate an AI-powered, context-specific summary.
-* Extract **Action Items, Key Decisions, and Deadlines**.
-* Present results in a clear, structured format.
+All major responses are **AI-generated and dynamically tailored to the user's input**, rather than being generic or predefined responses.
 
-3. **AI Task Planner**
+## ✨ Features Implemented
 
-* Generate **daily or weekly schedules** from user-provided tasks using AI.
-* Prioritise tasks based on importance and urgency.
-* Display tasks in an organised schedule/planner format.
-* Allow AI-generated results to be edited.
+### 📧 Smart Email Generator
 
-### Important AI Requirements
+Generate professional emails using AI based on the user's input.
 
-* **All application responses and generated outputs must be AI-generated and context-specific.**
-* Do **not** use generic, static, hardcoded responses, placeholder outputs, or predefined example answers as the application's primary functionality.
-* AI responses should be based directly on the user's inputs and instructions.
-* Ensure each tool produces useful, personalised results that reflect the information provided by the user.
-* Clearly indicate when content is AI-generated.
-* Include a **Responsible AI disclaimer** stating that users should review AI-generated content for accuracy and appropriateness before using it.
+**Supported tones:**
 
-### UI/UX Requirements
+* Formal
+* Friendly
+* Persuasive
 
-* Clean, modern, professional **SaaS-style dashboard**.
-* Use **sage green** as the primary colour, supported by neutral backgrounds and professional typography.
-* Fully responsive for **desktop and mobile**.
-* Sidebar navigation with:
+Users can review and edit the generated email before using it.
 
-* Dashboard
-* Email Generator
-* Meeting Summariser
-* Task Planner
-* Each tool should have clearly separated **input** and **AI output** sections.
-* Include loading states, empty states, error states, clear buttons, and intuitive interactions.
-* Use cards, subtle borders, rounded corners, and clean spacing for a polished interface.
+### 📝 Meeting Notes Summarizer
 
-### Access & Scope
+Transform lengthy meeting notes into concise, structured summaries.
 
-* **No backend required. ****
-* **No sign-in, registration, or authentication. ****
-* Users should be able to access and use the application immediately.
-* Do not build unnecessary account, database, or authentication features.
-* Focus on the frontend experience, user interactions, and AI-powered workflows.
+The AI identifies:
 
-This project was built with [Lovable](https://lovable.dev).
+* Key discussion points
+* Important decisions
+* Action items
+* Deadlines
+* Relevant follow-up tasks
 
-## Build with Lovable
+### ✅ AI Task Planner
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2e67727f-1316-46eb-9410-b818a8246052).
+Generate personalized daily task plans using AI.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+The task planner can organize user-provided tasks according to priorities and create a structured plan for the day.
 
-## Development
+### 🎨 Modern Dashboard
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+The application includes:
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+* Modern dashboard interface
+* Sidebar navigation
+* Responsive design
+* Clean and professional UI
+* Organized productivity tools
+* Editable AI-generated outputs
+
+### 🧠 AI-Powered Responses
+
+The application is designed so that responses are generated dynamically by AI based on the user's instructions and context.
+
+This ensures that outputs are:
+
+* Personalized
+* Context-aware
+* Relevant to the user's input
+* Different depending on the information provided
+
+### ⚠️ Responsible AI
+
+The application includes a responsible AI disclaimer to remind users that AI-generated content should be reviewed before being used for important workplace decisions or communications.
+
+## 🛠️ Technologies and Tools Used
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* Responsive Web Design
+
+### AI
+
+* AI-powered prompt engineering
+* Structured AI prompts
+* Dynamic AI-generated responses
+
+### Development Tools
+
+* Git
+* GitHub
+* Visual Studio Code
+* Web browser / Developer Tools
+
+> Update this section with the specific framework, API, database, or libraries used in your implementation, such as React, Next.js, Tailwind CSS, or an AI API.
+
+## 🚀 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd YOUR-REPOSITORY
+```
+
+### 3. Install Dependencies
+
+If your project uses Node.js:
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+If your application uses an AI API, create a `.env` file in the project root:
+
+```env
+AI_API_KEY=your_api_key_here
+```
+
+**Do not commit your API key or `.env` file to GitHub.**
+
+Make sure `.env` is included in your `.gitignore` file:
+
+```gitignore
+.env
+```
+
+### 5. Start the Application
+
+For a typical development setup:
+
+```bash
 npm run dev
 ```
+
+Then open the local development URL shown in your terminal.
+
+If your project is a static HTML/CSS/JavaScript application, you can alternatively open the main HTML file in your browser or use a local development server.
+
+## 📂 Project Structure
+
+A typical project structure may look like:
+
+```text
+AI-Workplace-Productivity-Assistant/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── ...
+│
+├── public/
+│
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+The exact structure may vary depending on the technologies used in the implementation.
+
+## 🔐 Responsible Use
+
+AI-generated content should be reviewed by the user before being sent, published, or used to make important workplace decisions.
+
+Users remain responsible for verifying the accuracy, appropriateness, and confidentiality of information processed through the application.
+
+## 🔮 Future Improvements
+
+Potential future enhancements include:
+
+* User authentication
+* Saved email and meeting summaries
+* Calendar integration
+* Task reminders
+* Email service integration
+* Custom AI preferences
+* Conversation history
+* Exporting summaries and task plans
+* Team collaboration features
+* Additional AI productivity tools
+
+## 👤 Author
+
+**Mayustri Gopalan**
+
+GitHub: [Add your GitHub profile link here]
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes. Add a license such as MIT if you intend to distribute the project as open source.
